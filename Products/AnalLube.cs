@@ -7,6 +7,8 @@
             Name = name;
             Manufacturer = manufacturer;
             Price = price;
+            Type = "Смазка";
         }
+
     }
 }

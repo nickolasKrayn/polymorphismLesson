@@ -1,4 +1,5 @@
-﻿namespace SexShop.Products
+﻿using System;
+namespace SexShop.Products
 {
     class Dolls : Product
     {
@@ -10,6 +11,12 @@
             Manufacturer = manufacturer;
             Price = price;
             Material = material;
+            Type = "Кукла";
         }
+        public override void UnicPar()
+        {
+            Console.WriteLine("Материал: " + this.Material);
+        }
+
     }
 }
