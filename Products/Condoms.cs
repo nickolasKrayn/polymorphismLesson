@@ -1,4 +1,5 @@
-﻿namespace SexShop.Products
+﻿using System;
+namespace SexShop.Products
 {
     class Condoms : Product
     {
@@ -10,6 +11,13 @@
             Manufacturer = manufacturer;
             Price = price;
             Size = size;
+            Type = "Контрацептив";
         }
+
+        public override void UnicPar()
+        {
+            Console.WriteLine("Размер: " + this.Size);
+        }
+
     }
 }
