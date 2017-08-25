@@ -13,6 +13,12 @@
             Catgory = category;
         }
 
+        public override double GetDiscountPrice(User user)
+        {
+            return Price * 0.25;
+            //return base.GetDiscountPrice(user);
+        }
+
         public override string ToConsole(string s = "")
         {
             return base.ToConsole("Материал: " + Material);

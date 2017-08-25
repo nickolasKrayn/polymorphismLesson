@@ -13,6 +13,15 @@
             Catgory = category;
         }
 
+        public override double GetDiscountPrice(User user)
+        {
+            if (user.Name.StartsWith("З"))
+            {
+                return Price * 0.28;
+            }
+            return base.GetDiscountPrice(user);
+        }
+
         public override string ToConsole(string s = "")
         {
             return base.ToConsole("Размер: " + Size);
