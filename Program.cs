@@ -7,12 +7,7 @@ namespace SexShop
     {
         static void Main(string[] args)
         {
-            User user = new User(
-                "Artem",
-                "Улица Пушкина, дом Колотушкина",
-                100000,
-                550
-                );
+            User user = new User("Artem", "Улица Пушкина, дом Колотушкина", 100000, 550);
 
             Console.WriteLine("Список товаров:");
 
