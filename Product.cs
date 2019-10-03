@@ -1,10 +1,14 @@
-﻿namespace SexShop
+﻿using System;
+
+namespace SexShop
 {
     class Product
     {
         public double Price { get; set; }
         public string Name { get; set; }
         public string Manufacturer { get; set; }
+
+        public void Display(){}
 
         public virtual double GetDiscountPrice(User user)
         {

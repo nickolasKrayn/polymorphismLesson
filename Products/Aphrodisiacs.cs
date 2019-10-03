@@ -1,4 +1,6 @@
-﻿namespace SexShop.Products
+﻿using System;
+
+namespace SexShop.Products
 {
     class Aphrodisiacs : Product
     {
@@ -10,6 +12,16 @@
             Manufacturer = manufacturer;
             Price = price;
             Composition = composition;
+        }
+
+        public new void Display()
+        {
+            Console.WriteLine("Афродизиак:");
+            Console.WriteLine("Название: " + Name);
+            Console.WriteLine("Цена: " + Price);
+            Console.WriteLine("Производитель: " + Manufacturer);
+            Console.WriteLine("Состав: " + Composition);
+            Console.WriteLine(new String('-', 25));
         }
 
         public override double GetDiscountPrice(User user)

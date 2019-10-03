@@ -1,4 +1,6 @@
-﻿namespace SexShop.Products
+﻿using System;
+
+namespace SexShop.Products
 {
     class Dolls : Product
     {
@@ -10,6 +12,16 @@
             Manufacturer = manufacturer;
             Price = price;
             Material = material;
+        }
+
+        public new void Display()
+        {
+            Console.WriteLine("Кукла:");
+            Console.WriteLine("Название: " + Name);
+            Console.WriteLine("Цена: " + Price);
+            Console.WriteLine("Производитель: " + Manufacturer);
+            Console.WriteLine("Материал: " + Material);
+            Console.WriteLine(new String('-', 25));
         }
     }
 }
