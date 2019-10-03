@@ -23,12 +23,7 @@ namespace SexShop
                 "резина"
                 );
 
-            Console.WriteLine("Кукла:");
-            Console.WriteLine("Название: " + gusDolls.Name);
-            Console.WriteLine("Цена: " + gusDolls.Price);
-            Console.WriteLine("Производитель: " + gusDolls.Manufacturer);
-            Console.WriteLine("Материал: " + gusDolls.Material);
-            Console.WriteLine(new String('-', 25));
+            gusDolls.Display();
 
             Condoms DirtyJoes = new Condoms(
                 "Грязный Джо",
@@ -37,12 +32,7 @@ namespace SexShop
                 25
                 );
 
-            Console.WriteLine("Контрацептив:");
-            Console.WriteLine("Название: " + DirtyJoes.Name);
-            Console.WriteLine("Цена: " + DirtyJoes.Price);
-            Console.WriteLine("Производитель: " + DirtyJoes.Manufacturer);
-            Console.WriteLine("Размер: " + DirtyJoes.Size);
-            Console.WriteLine(new String('-', 25));
+            DirtyJoes.Display();
 
             Aphrodisiacs HorsesAphrodisiacs = new Aphrodisiacs(
                 "Конский возбудитель",
@@ -51,12 +41,7 @@ namespace SexShop
                 "Любовь"
                 );
 
-            Console.WriteLine("Афродизиак:");
-            Console.WriteLine("Название: " + HorsesAphrodisiacs.Name);
-            Console.WriteLine("Цена: " + HorsesAphrodisiacs.Price);
-            Console.WriteLine("Производитель: " + HorsesAphrodisiacs.Manufacturer);
-            Console.WriteLine("Состав: " + HorsesAphrodisiacs.Composition);
-            Console.WriteLine(new String('-', 25));
+            HorsesAphrodisiacs.Display();
 
             Aphrodisiacs FriendAphrodisiacs = new Aphrodisiacs("Завали Подругу",
                 700,
@@ -64,12 +49,7 @@ namespace SexShop
                 "Клофелин, Спиртяга"
                 );
 
-            Console.WriteLine("Афродизиак:");
-            Console.WriteLine("Название: " + FriendAphrodisiacs.Name);
-            Console.WriteLine("Цена: " + FriendAphrodisiacs.Price);
-            Console.WriteLine("Производитель: " + FriendAphrodisiacs.Manufacturer);
-            Console.WriteLine("Состав: " + FriendAphrodisiacs.Composition);
-            Console.WriteLine(new String('-', 25));
+            FriendAphrodisiacs.Display();
 
             AnalLube vasilin = new AnalLube(
                 "Вазилин",
@@ -77,11 +57,7 @@ namespace SexShop
                 "Вазилинодельня #1"
                 );
 
-            Console.WriteLine("Афродизиак:");
-            Console.WriteLine("Название: " + vasilin.Name);
-            Console.WriteLine("Цена: " + vasilin.Price);
-            Console.WriteLine("Производитель: " + vasilin.Manufacturer);
-            Console.WriteLine(new String('-', 25));
+            vasilin.Display();
 
 
             Product[] products = new Product[] {
